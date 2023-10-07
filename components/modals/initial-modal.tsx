@@ -36,7 +36,7 @@ const formSchema = z.object({
   })
 })
 
-export const InitialModal = () => {
+const InitialModal = () => {
   const [isMounted, setIsMounted] = useState(false)
   const router = useRouter()
   useEffect(() => {
@@ -138,3 +138,5 @@ export const InitialModal = () => {
     </Dialog>
   );
 }
+
+export default InitialModal
