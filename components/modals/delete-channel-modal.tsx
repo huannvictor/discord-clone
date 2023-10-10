@@ -1,5 +1,12 @@
 "use client"
 
+import axios from "axios";
+import qs from 'query-string';
+
+import { useModal } from "@/hooks/use-modal-store";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,10 +16,6 @@ import {
   DialogHeader,
   DialogTitle
 } from "@/components/ui/dialog";
-import { useModal } from "@/hooks/use-modal-store";
-import axios from "axios";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export const DeleteChannelModal = () => {
   const { isOpen, onClose, type, data } = useModal()
@@ -21,14 +24,24 @@ export const DeleteChannelModal = () => {
 
   const isModalOpen = isOpen && type === 'deleteChannel'
   const { channel } = data
+  const serverId = channel?.serverId
 
   const onConfirm = async () => {
     try {
       setIsLoading(true)
-      await axios.delete(`/api/channels/${channel?.id}`)
+
+      const url = qs.stringifyUrl({
+        url: `/api/channels/${channel?.id}`,
+        query: {
+          serverId
+        }
+      })
+
+      await axios.delete(url)
       
       onClose()
       router.refresh()
+      router.push(`/servers/${serverId}`)
     } catch (error) {
       console.error("onConfirm", error)
     } finally {
@@ -48,7 +61,7 @@ export const DeleteChannelModal = () => {
 
           <DialogDescription className="text-center text-zinc-500">
             Are you sure you want to do this? <br />
-            <span className="font-semibold text-rose-500">{channel?.name}</span> will be permanently deleted.
+            <span className="font-semibold text-rose-500">#{channel?.name}</span> will be permanently deleted.
           </DialogDescription>
         </DialogHeader>
 
