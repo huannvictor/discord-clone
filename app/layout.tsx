@@ -3,6 +3,7 @@ import { Open_Sans } from 'next/font/google'
 import './globals.css'
 
 import { ModalProvider } from '@/components/providers/modal-provider'
+import { SocketProvider } from "@/components/providers/socket-provider"
 import { ThemeProvider } from '@/components/providers/theme-provider'
 
 import { cn } from '@/lib/utils'
@@ -33,8 +34,10 @@ export default function RootLayout({
             storageKey='discord-theme'
             enableSystem
           >
-            <ModalProvider />
-           {children}
+            <SocketProvider>
+              <ModalProvider />
+              {children}
+            </SocketProvider>
           </ThemeProvider>
         </body>
       </html>
