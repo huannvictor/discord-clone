@@ -27,3 +27,4 @@ const ioHandler = (
   res.end()
 }
 
+export default ioHandler
