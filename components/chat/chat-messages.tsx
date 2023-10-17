@@ -91,6 +91,7 @@ export const ChatMessages = ({
                 deleted={message.deleted}
                 currentMember={member}
                 isUpdated={message.updatedAt !== message.createdAt}
+                updatedAt={format(new Date(message.updatedAt), DATE_FORMAT)}
                 socketUrl={socketUrl}
                 socketQuery={socketQuery}
               />

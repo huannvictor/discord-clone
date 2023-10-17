@@ -29,6 +29,7 @@ interface ChatItemProps {
   deleted: boolean
   currentMember: Member
   isUpdated: boolean
+  updatedAt: string
   socketUrl: string
   socketQuery: Record<string, string>
 }
@@ -52,6 +53,7 @@ export const ChatItem = ({
   deleted,
   currentMember,
   isUpdated,
+  updatedAt,
   socketUrl,
   socketQuery
 }: ChatItemProps) => {
@@ -90,9 +92,6 @@ export const ChatItem = ({
       form.reset()
       setIsEditing(false)
 
-      console.group('(edited)')
-      console.log({ isUpdated, deleted })
-      console.groupEnd()
     } catch (error) {
       console.error(error)
     }
@@ -102,7 +101,7 @@ export const ChatItem = ({
     form.reset({
       content: content,
     })
-  }, [content])
+  }, [content, form])
 
   const fileType = fileUrl?.split('.').pop()
 
@@ -172,7 +171,7 @@ export const ChatItem = ({
               {content}
               {isUpdated && !deleted && (
                 <span className="text-[10px] mx-2 text-zinc-500 dark:text-zinc-400">
-                  (edited)
+                  (edited at {updatedAt})
                 </span>
               )}
             </p>
