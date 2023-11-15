@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discord Clone
 
-## Getting Started
+This project was made with a tutorial form Antonio's Channel. [::Code with Antonio::](https://www.youtube.com/watch?si=gv6zrY6AfP-chhqP&v=ZbX4Ok9YX94&feature=youtu.be)
+
+In this 11 hour course you will learn how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.
+
+## Coding
+
+React.js • Next.js • Typescript • Tailwind • Prisma • MySQL
+
+## Components
+
+Shadcn/UI • Lucide
+
+## Authentication
+
+clerk
+
+## Video and Audio Connection
+
+livekit.io
+
+---
+
+# Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Screenshots
 
-## Learn More
+### login and sign in with clerck
 
-To learn more about Next.js, take a look at the following resources:
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/267eb858-5ec0-49eb-82c5-b735f75d5f5c)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### after you logged in, create your first Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/da6f0ce9-127e-4302-84bf-6d3f5d8861c9)
 
-## Deploy on Vercel
+### upload your server picture and set your server name
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/5fa6b815-25ed-4130-b25f-92a0032dbb2f)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### \#general is your default Channel, but you can create as many as you want
+
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/01210a54-5c19-4495-89be-b68d563a12d6)
+
+### open your server menu to
+
+- invite people
+- access your server settings
+- manage your server members
+- create a channel
+- or delete your server
+
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/f9e892c3-addd-4abb-a9e7-ca2a3443e4ac)
+
+- click 'Create Channel'
+- choose a type: text, audio or video
+- click 'create'
+
+![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/053735ad-16ca-4852-a4d8-d62d654ec7fa)
+
+?descriptionFromFileType=function+toLocaleUpperCase()+{+[native+code]+}+File&mimeType=application/octet-stream&fileName=Discord+Clone.md&fileType=undefined&fileExtension=md
