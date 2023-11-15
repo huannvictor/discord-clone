@@ -67,5 +67,3 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 - click 'create'
 
 ![image.png](https://res.craft.do/user/full/2a94c98e-cd47-d60f-7a1c-d742c8bd4fd9/doc/fcb83fe0-12c7-fb79-03ad-b69d7e289101/053735ad-16ca-4852-a4d8-d62d654ec7fa)
-
-?descriptionFromFileType=function+toLocaleUpperCase()+{+[native+code]+}+File&mimeType=application/octet-stream&fileName=Discord+Clone.md&fileType=undefined&fileExtension=md
