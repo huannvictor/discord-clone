@@ -2,7 +2,7 @@
 
 This project was made with a tutorial form Antonio's Channel. [::Code with Antonio::](https://www.youtube.com/watch?si=gv6zrY6AfP-chhqP&v=ZbX4Ok9YX94&feature=youtu.be)
 
-In this 11 hour course you will learn how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.
+In this 11 hour course I learned how to create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.
 
 ## Coding
 
